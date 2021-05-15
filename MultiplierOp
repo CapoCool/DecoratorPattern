@@ -1,0 +1,22 @@
+package DecoratorPractice;
+
+/* Dillan Poorman
+ * 
+ */
+
+public class MultiplierOp extends NumberDecorator {
+
+	
+
+	@Override
+	   public void performNumberOperation() {
+		
+	       int total = numberList.get(0);
+	       for (int i = 1; i < numberList.size(); i++) {
+	           total = total * numberList.get(i);
+	       }      
+	       System.out.println("********** Multiply all the numbers together **********");
+	       System.out.println("Muliply operation result: " + total);
+	   }
+
+	}
