@@ -1,0 +1,25 @@
+package DecoratorPractice;
+
+import java.util.ArrayList;
+/* Dillan Poorman
+ * 
+ */
+public abstract class NumberDecorator {
+   ArrayList<Integer> numberList = new ArrayList<>();
+
+   /**
+   * @return the numberList
+   */
+   public ArrayList<Integer> getNumberList() {
+       return numberList;
+   }
+
+   /**
+   * @param numberList the numberList to set
+   */
+   public void setNumbersList(ArrayList<Integer> numberList) {
+       this.numberList = numberList;
+   }
+
+   public abstract void performNumberOperation();
+}
