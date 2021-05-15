@@ -1,0 +1,19 @@
+package DecoratorPractice;
+
+/* Dillan Poorman
+ * 
+ */
+
+public class AddOp extends NumberDecorator {
+
+	   @Override
+	   public void performNumberOperation() {
+	       int total = 0;
+	       for (Integer number : numberList) {
+	           total += number;
+	       }
+	       System.out.println("********** Add all the numbers together **********");
+	       System.out.println("Add operation result: " + total);
+	   }
+
+	}
