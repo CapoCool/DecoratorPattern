@@ -1,0 +1,22 @@
+package DecoratorPractice;
+
+/* Dillan Poorman
+ * 
+ */
+
+public class SubtractOp extends NumberDecorator {
+	
+
+	@Override
+	   public void performNumberOperation() {
+		
+	       int total = 0;
+	       for (Integer number : numberList) {
+	           total = total + number;
+	       }
+	       System.out.println("********** Subtract all the numbers from 100 **********");
+	       System.out.println("Subtract operation result: " + (100 - total));
+	       
+	   }
+
+	}
